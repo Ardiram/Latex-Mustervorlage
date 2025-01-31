@@ -1,0 +1,20 @@
+\begin{table}[H]
+    \caption{Die berechneten Energiedifferenzen in \unit{\kilo\joule\per\mole}.}
+    \centering
+    \begin{threeparttable}
+    \label{tab:energie}
+    \begin{tabular}{@{}l *{4}{S[table-format=-3.2]} @{}}
+    \toprule
+                                  & {DFT}         & {DFT + ZPE}    & {CC}          & {CC + ZPE}     \\
+                                  & \multicolumn{4}{|c|}{\unit{\kilo\joule\per\mol}} \\ \midrule
+    \makecell{Edukte - Präkomplex \\ (\textbf{Assoziationsenergie})}          &  -37.24        &  -34.02         &  -32.39        &  -29.17         \\
+    \makecell{Edukte - Übergangszustand \\ (\textbf{Aktivierungsenergie})} & 16.40        & 23.07         & 20.78        & 27.45         \\
+    \makecell{Edukte - Produkt \\ (\textbf{thermodynamische Energie}\textsuperscript{a})}             &  -90.75        &  -72.57         & -135.71        & -117.52         \\
+    \bottomrule
+    \end{tabular}
+    
+    \begin{tablenotes}
+    \item[a] Auch als Reaktionsenthalpie \textDelta H bekannt, wird aber im weiteren Verlauf mit \textDelta E bezeichnet
+    \end{tablenotes}
+    \end{threeparttable}
+\end{table}

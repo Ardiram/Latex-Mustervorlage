@@ -1,0 +1,209 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Nicolaou}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=709c92af3514616d4b501cb931191661}{%
+           family={Nicolaou},
+           familyi={N\bibinitperiod},
+           given={K.\bibnamedelimi C.},
+           giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=75882c164942ad7c0db49c2ea30c5b5e}{%
+           family={Snyder},
+           familyi={S\bibinitperiod},
+           given={Scott\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ecc118f4cfb4dcb35723448685775dc6}{%
+           family={Montagnon},
+           familyi={M\bibinitperiod},
+           given={Tamsyn},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d9bee05f1febc36427e10c40bd097c55}{%
+           family={Vassilikogiannakis},
+           familyi={V\bibinitperiod},
+           given={Georgios},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{200b3c1e8739a767d06b2a1444daf42e}
+      \strng{fullhash}{bbbb03d721ac4363844f9b8037a2f9b4}
+      \strng{fullhashraw}{bbbb03d721ac4363844f9b8037a2f9b4}
+      \strng{bibnamehash}{bbbb03d721ac4363844f9b8037a2f9b4}
+      \strng{authorbibnamehash}{bbbb03d721ac4363844f9b8037a2f9b4}
+      \strng{authornamehash}{200b3c1e8739a767d06b2a1444daf42e}
+      \strng{authorfullhash}{bbbb03d721ac4363844f9b8037a2f9b4}
+      \strng{authorfullhashraw}{bbbb03d721ac4363844f9b8037a2f9b4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract The Diels–Alder reaction has both enabled and shaped the art and science of total synthesis over the last few decades to an extent which, arguably, has yet to be eclipsed by any other transformation in the current synthetic repertoire. With myriad applications of this magnificent pericyclic reaction, often as a crucial element in elegant and programmed cascade sequences facilitating complex molecule construction, the Diels–Alder cycloaddition has afforded numerous and unparalleled solutions to a diverse range of synthetic puzzles provided by nature in the form of natural products. In celebration of the 100th anniversary of Alder's birth, selected examples of the awesome power of the reaction he helped to discover are discussed in this review in the context of total synthesis to illustrate its overall versatility and underscore its vast potential which has yet to be fully realized.}
+      \field{journaltitle}{Angewandte Chemie International Edition}
+      \field{number}{10}
+      \field{title}{The Diels–Alder Reaction in Total Synthesis}
+      \field{volume}{41}
+      \field{year}{2002}
+      \field{pages}{1668\bibrangedash 1698}
+      \range{pages}{31}
+      \verb{doi}
+      \verb https://doi.org/10.1002/1521-3773(20020517)41:10<1668::AID-ANIE1668>3.0.CO;2-Z
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/1521-3773%2820020517%2941%3A10%3C1668%3A%3AAID-ANIE1668%3E3.0.CO%3B2-Z
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/1521-3773%2820020517%2941%3A10%3C1668%3A%3AAID-ANIE1668%3E3.0.CO%3B2-Z
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/1521-3773%2820020517%2941%3A10%3C1668%3A%3AAID-ANIE1668%3E3.0.CO%3B2-Z
+      \endverb
+      \keyw{biomimetic synthesis,cascade reaction,cycloaddition,Diels–Alder reaction,total synthesis}
+    \endentry
+    \entry{Zülicke2015}{inbook}{}{}
+      \name{author}{1}{}{%
+        {{hash=a3fd088d8a5e95abcfaece912ce4da0f}{%
+           family={Zülicke},
+           familyi={Z\bibinitperiod},
+           given={Lutz},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Wiesbaden}%
+      }
+      \list{publisher}{1}{%
+        {Springer Fachmedien Wiesbaden}%
+      }
+      \strng{namehash}{a3fd088d8a5e95abcfaece912ce4da0f}
+      \strng{fullhash}{a3fd088d8a5e95abcfaece912ce4da0f}
+      \strng{fullhashraw}{a3fd088d8a5e95abcfaece912ce4da0f}
+      \strng{bibnamehash}{a3fd088d8a5e95abcfaece912ce4da0f}
+      \strng{authorbibnamehash}{a3fd088d8a5e95abcfaece912ce4da0f}
+      \strng{authornamehash}{a3fd088d8a5e95abcfaece912ce4da0f}
+      \strng{authorfullhash}{a3fd088d8a5e95abcfaece912ce4da0f}
+      \strng{authorfullhashraw}{a3fd088d8a5e95abcfaece912ce4da0f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Dieses Kapitel befasst sich mit der Berechnung von Eigenschaften eines molekularen Aggregats, soweit sie durch die Elektronenhülle in einem festen stationären Zustand (elektronisch adiabatische Näherung) bestimmt sind. Die Grundlage für solche Berechnungen bildet eine quantenchemische Modellierung mittels der in den Kapiteln 4, 7, 8 und 9 behandelten Konzepte [s. Abschn. 16.2 (ii)]. Es ist allerdings nicht möglich, die vielfältigen methodischen Varianten und Verfahren im hier verfügbaren Rahmen auch nur einigerma{ß}en erschöpfend darzustellen, zumal sich einige Teilgebiete noch in rascher Entwicklung befinden.}
+      \field{booktitle}{Molekulare Theoretische Chemie: Eine Einführung}
+      \field{isbn}{978-3-658-00489-7}
+      \field{title}{Quantenchemische Modellierung molekularer Elektronenhüllen und ihrer Eigenschaften}
+      \field{year}{2015}
+      \field{pages}{781\bibrangedash 863}
+      \range{pages}{83}
+      \verb{doi}
+      \verb 10.1007/978-3-658-00489-7_17
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-658-00489-7_17
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-658-00489-7_17
+      \endverb
+    \endentry
+    \entry{Reinhold2015}{inbook}{}{}
+      \name{author}{1}{}{%
+        {{hash=3595af3415a11311d570b87878250004}{%
+           family={Reinhold},
+           familyi={R\bibinitperiod},
+           given={Joachim},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Wiesbaden}%
+      }
+      \list{publisher}{1}{%
+        {Springer Fachmedien Wiesbaden}%
+      }
+      \strng{namehash}{3595af3415a11311d570b87878250004}
+      \strng{fullhash}{3595af3415a11311d570b87878250004}
+      \strng{fullhashraw}{3595af3415a11311d570b87878250004}
+      \strng{bibnamehash}{3595af3415a11311d570b87878250004}
+      \strng{authorbibnamehash}{3595af3415a11311d570b87878250004}
+      \strng{authornamehash}{3595af3415a11311d570b87878250004}
+      \strng{authorfullhash}{3595af3415a11311d570b87878250004}
+      \strng{authorfullhashraw}{3595af3415a11311d570b87878250004}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Für atomare Mehrelektronenzustände haben wir bisher nur die Drehimpulseigenschaften untersucht (Abschn. 1.5.4 und 3.3.6), für molekulare Mehrelektronensysteme die MO-Struktur mit Hilfe qualitativer Methoden (Kap. 3). Zur vollständigen Charakterisierung von Mehrelektronensystemen ist die explizite Einbeziehung der Elektronenwechselwirkung erforderlich. Näherungsweise ist dies mit dem Hartree-Fock-Formalismus möglich, einem Variationsverfahren, das die gesuchten Mehrelektronen-Zustandsfunktionen in Form „bester`` Determinanten aus Einelektronenfunktionen (Orbitalen) liefert. Wir behandeln dies ausführlich. Mit einem LCAO-Ansatz für die Molekülorbitale führt der Hartree-Fock-Formalismus auf die Roothaan-Hall-Gleichungen, aus denen sich durch verschiedene Näherungen die semiempirischen Rechenverfahren ableiten lassen.}
+      \field{booktitle}{Quantentheorie der Moleküle: Eine Einführung}
+      \field{isbn}{978-3-658-09410-2}
+      \field{title}{Quantitative Theorie der Mehrelektronensysteme}
+      \field{year}{2015}
+      \field{pages}{223\bibrangedash 284}
+      \range{pages}{62}
+      \verb{doi}
+      \verb 10.1007/978-3-658-09410-2_4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-658-09410-2_4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-658-09410-2_4
+      \endverb
+    \endentry
+    \entry{alma990015422030206446}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=dc52ed3315ff506a9d4fe6a0ab079ae2}{%
+           family={Szabo},
+           familyi={S\bibinitperiod},
+           given={Attila},
+           giveni={A\bibinitperiod}}}%
+        {{hash=977f18e68b981d3d80b363ccb7cbeab7}{%
+           family={Ostlund},
+           familyi={O\bibinitperiod},
+           given={Neil\bibnamedelima S.},
+           giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Mineola, NY}%
+      }
+      \list{publisher}{1}{%
+        {Dover}%
+      }
+      \strng{namehash}{7e4e963df06b39584349eaf439922455}
+      \strng{fullhash}{7e4e963df06b39584349eaf439922455}
+      \strng{fullhashraw}{7e4e963df06b39584349eaf439922455}
+      \strng{bibnamehash}{7e4e963df06b39584349eaf439922455}
+      \strng{authorbibnamehash}{7e4e963df06b39584349eaf439922455}
+      \strng{authornamehash}{7e4e963df06b39584349eaf439922455}
+      \strng{authorfullhash}{7e4e963df06b39584349eaf439922455}
+      \strng{authorfullhashraw}{7e4e963df06b39584349eaf439922455}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Modern quantum chemistry introduction to advanced electronic structure theory}
+      \field{edition}{Unabridged, unaltered republ. of the 1. ed., rev., New York, 1989}
+      \field{isbn}{9780486691862}
+      \field{title}{Modern quantum chemistry : introduction to advanced electronic structure theory}
+      \field{year}{1996}
+      \keyw{Quantenchemie}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

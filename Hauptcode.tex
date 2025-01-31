@@ -1,0 +1,200 @@
+\RequirePackage{fix-cm}  % Korrektur für CM-Schriftgrößen
+\documentclass[a4paper,12pt]{report}
+
+% ========================
+%  KODIERUNG & SCHRIFTARTEN
+% ========================
+\usepackage[T1]{fontenc}        % T1-Schriftkodierung
+\usepackage[utf8]{inputenc}     % UTF8-Eingabekodierung
+\usepackage{lmodern}
+\usepackage{helvet}             % Arial-Schriftart
+\renewcommand{\familydefault}{\sfdefault}  % Sans-Serif als Standard
+\usepackage{mathpazo}           % Palatino für Matheumgebungen
+\usepackage[italic]{mathastext} % Helvetica in Matheumgebungen
+\usepackage{textcomp}           % Zusätzliche Textzeichen
+
+% ========================
+%  SPRACHE & ZITIERSTIL
+% ========================
+\usepackage[ngerman]{babel}     % Deutsche Silbentrennung
+\usepackage[style=chem-angew]{biblatex}  % Chemie-Zitierstil
+\addbibresource{1.bib}          % Literaturdatenbank
+
+% ========================
+%  SEITENLAYOUT
+% ========================
+\usepackage[top=2cm, bottom=3cm, left=2cm, right=2cm]{geometry}
+\usepackage{setspace}           % Zeilenabstand
+\onehalfspacing                 % 1.5-facher Zeilenabstand
+\usepackage{parskip}            % Absatzabstände
+\setlength{\parindent}{0mm}     % Keine Einrückung
+\usepackage{fancyhdr}           % Kopf- und Fußzeilen
+\usepackage{pdflscape}          % Querformat-Seiten
+
+% ========================
+%  MATHEMATIK & CHEMIE
+% ========================
+\usepackage{amsmath, amssymb, mathtools}  % Mathepakete
+\usepackage{chemformula}        % Chemische Formeln
+\usepackage[version=4]{mhchem}  % Erweiterte Chemienotation
+\usepackage{textgreek}          % Griechische Buchstaben im Text
+
+% ========================
+%  EINHEITEN & MESSWERTE
+% ========================
+\usepackage{siunitx}            % SI-Einheiten und wissenschaftliche Notation
+\sisetup{
+  detect-all,                   % Automatische Schriftarterkennung
+  range-units = single          % Einheitenbereichsdarstellung
+}
+\DeclareSIUnit\angstrom{\text{Å}}  % Ångström-Definition
+
+% ========================
+%  TABELLEN & ABBILDUNGEN
+% ========================
+\usepackage{tabularx}           % Flexible Tabellen
+\usepackage{tabularray}         % Moderne Tabellenformatierung
+\usepackage{booktabs}           % Professionelle Tabellenlinien
+\usepackage[table]{xcolor} % Tabellenfarben
+\usepackage{graphicx}           % Grafikeinbindung
+\usepackage{float}              % Float-Positionierung
+\usepackage{newfloat}           % Neue Float-Umgebungen
+\usepackage{makecell}           % Tabellenzellenformatierung
+\usepackage{threeparttable}     % Tabellennotizen mit korrekter Breite
+
+% ========================
+%  CODE & LISTINGS
+% ========================
+\usepackage{minted}             % Code-Highlighting
+\usemintedstyle{tango}          % Code-Stil
+\definecolor{LightGray}{gray}{0.85}  % Code-Hintergrund
+\definecolor{LighterGray}{gray}{0.95}  % Code-Hintergrund
+\usepackage{fvextra}            % Verbesserte Listings
+
+% ========================
+%  REFERENZEN & HYPERLINKS
+% ========================
+\usepackage{hyperref}           % Hyperlinks
+\usepackage{csquotes, xpatch}           % Intelligente Anführungszeichen
+\hypersetup{
+    colorlinks=false,
+    allbordercolors=blue,
+    pdfborderstyle={/S/U/W 1},
+    pdfpagemode=FullScreen
+}
+\usepackage[german]{cleveref}   % Intelligente Referenzen
+\usepackage[nottoc]{tocbibind}  % Literaturverzeichnis im Inhaltsverzeichnis
+
+% ========================
+%  BENUTZERDEFINIERTE UMWELTEN
+% ========================
+\DeclareFloatingEnvironment[name={Reaktionsschema}]{schfigure}
+\DeclareFloatingEnvironment[name={Abbildung}]{abbfigure}
+
+\newcounter{myequation}  % Eigene Gleichungsnummerierung
+\renewcommand{\themyequation}{\arabic{myequation}}
+\newenvironment{myequation}
+  {\stepcounter{myequation}\equation}
+  {\tag{\themyequation}\endequation}
+
+% ========================
+%  BILDBESCHRIFTUNGEN
+% ========================
+\usepackage[singlelinecheck=false,
+            justification=justified,
+            font=small,
+            labelfont=bf]{caption}
+\DeclareCaptionFormat{custom}{\fontsize{11}{12}\selectfont\textbf{#1#2}{#3}}
+\captionsetup{format=custom}
+
+% ========================
+%  SONSTIGE PAKETE
+% ========================
+\usepackage{lipsum}             % Platzhaltetext
+\usepackage{paracol}            % Parallelspalten
+\usepackage{pdfpages}           % PDF-Einbindung
+\usepackage{fancyvrb}           % Verbesserte Verbumgebungen
+
+% ========================
+%  DOKUMENTKONFIGURATION
+% ========================
+\pagenumbering{Roman}           % Römische Seitenzahlen
+\renewcommand\thesection{\arabic{section}} % Für die Nummerierung der Sektionen
+\setcounter{tocdepth}{4}        % Gliederungstiefe im Inhaltsverzeichnis
+\setcounter{secnumdepth}{4}     % Nummerierungstiefe
+\crefname{abbfigure}{Abbildung}{Abbildungen}  % Deutsche Bezeichnungen
+\crefrangelabelformat{abbfigure}{#3#1#4–#5#2#6}
+\crefmultiformat{abbfigure}{#2Abbildungen #1#3}{ und #2#1#3}{, #2#1#3}{ und #2#1#3} % German "und"
+
+
+% ========================
+%  BENUTZERDEFINIERTE BEFEHLE
+% ========================
+\newcommand{\HRule}{\rule{\linewidth}{0.7mm}}  % Horizontale Linie
+\newcommand{\size}[2]{{\fontsize{#1}{0}\selectfont#2}}  % Schriftgröße
+\newcommand{\cellbreak}[2][c]{\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\urlstyle{same}
+
+\begin{document}
+
+\input{Sections/Titelseite}
+
+\newpage
+
+\chapter*{Zusammenfassung}
+
+\lipsum[1]
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\pagestyle{fancy}
+\fancyfoot{}
+\fancyhead{}
+\fancyhead[L]{\rightmark} % Für die Referenz der Subsection in der Kopfzeile
+\renewcommand{\headruleskip}{2mm} % Wie weit die Schrift in der Kopfzeile von der Linie entfernt ist
+\fancyfoot[C]{\thepage} % Für die Seitennummerierung
+\renewcommand{\headrulewidth}{0.5pt} % Wie breit die Kopflinie ist
+\renewcommand{\footrulewidth}{1.5pt} % Wie breit die Fußlinie ist
+\addtolength{\headheight}{\baselineskip} % Die Position der Kopf-und Fußzeile
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}} % Kommando für die Reverenz der Section
+% \renewcommand{\sectionmark}[1]{\markboth{\arabic{section}.\ #1}{}} Wenn die Sektionen in der Kopfzeile nummeriert werden sollen
+\renewcommand{\subsectionmark}[1]{\markright{#1}} % Kommando für die Referenz der Subsection
+\fancyhead[R]{\leftmark} % Für die Referenz der Section in der Kopfzeile
+
+\pagenumbering{arabic}
+
+\setcounter{page}{1}
+
+\input{Sections/Section 1}
+
+\newpage
+
+\input{Sections/Section 2}
+
+\newpage
+
+\input{Sections/Section 3}
+
+\newpage
+
+\input{Sections/Section 4}
+
+\newpage
+
+\input{Sections/Section 5}
+
+\newpage
+
+\include{Sections/Appendix}
+
+\newpage
+
+\section{Literaturverzeichnis}
+\printbibliography[heading=none]
+
+\end{document}

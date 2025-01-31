@@ -1,0 +1,81 @@
+\section[Einleitung]{Einleitung}
+
+\begin{sloppypar}  % Verhindert überlaufende Zeilen (nur bei Bedarf verwenden)
+    In dieser Studie wird [...] Dichtefunktionaltheorie und Coupled Cluster verglichen.\footnote{Eine Fussnotiz kommt hier hin \textcite{Nicolaou}}
+\end{sloppypar}
+
+% ========================
+%  UNTERABSCHNITT
+% ========================
+\subsection{Diels-Alder Reaktion}
+Die Diels-Alder-Reaktion ist eine [...] in der synthetischen organischen Chemie.\autocite{Nicolaou} 
+
+% ========================
+%  MATHEMATISCHE GRUNDLAGEN
+% ========================
+Elektronischer Hamilton-Operator (\cref{eq:hamiltonian})
+\begin{myequation}
+    \hat{H}_{\text{el}} = -\frac{1}{2} \sum_{i=1}^N \nabla_i^2 
+    - \sum_{i=1}^N \sum_{\alpha=1}^{M} \frac{Z_\alpha}{|\mathbf{r}_i - \mathbf{R}_\alpha|} 
+    + \sum_{i > j}^N \frac{1}{|\mathbf{r}_i - \mathbf{r}_j|}
+    \label{eq:hamiltonian}
+\end{myequation}
+
+% Slater-Determinante (Gleichung 2)
+\begin{myequation}
+    \tilde{\Psi}(\mathbf{r}_1, \dots, \mathbf{r}_N) = \frac{1}{\sqrt{N!}} 
+    \begin{vmatrix}
+    \phi_1(\mathbf{r}_1) & \cdots & \phi_1(\mathbf{r}_N) \\
+    \vdots & \ddots & \vdots \\
+    \phi_N(\mathbf{r}_1) & \cdots & \phi_N(\mathbf{r}_N)
+    \end{vmatrix}
+    \label{eq:slater}
+\end{myequation}
+
+% ========================
+%  ABBILDUNG in Latex
+% ========================
+
+So kann man im Text auf die Abbildung verweisen: \cref{fig:scf}
+
+\begin{abbfigure}[H]  % [H] erzwingt genaue Positionierung
+    \centering
+    \includegraphics[width=.2\textwidth]{Graphik/SCF.png}
+    \caption{Eine graphische Darstellung der SCF Methode.\autocite{Zülicke2015}}
+    \label{fig:scf}
+\end{abbfigure}
+
+% ========================
+%  Listen in Latex
+% ========================
+\begin{itemize}
+    \item \textbf{Orbitale vom Gaußschen Typ (GTOs)}: 
+    \begin{equation}
+        \chi_\mu(\mathbf{r}) = N x^{l} y^{m} z^{n} e^{-\alpha \|\mathbf{r} - \mathbf{R}\|^2}
+    \end{equation}
+    \begin{tabular}{@{}ll@{}}
+        \( N \): & Normierungskonstante \\
+        \( \alpha \): & Exponent (radialer Zerfall) \\
+        \( (l, m, n) \): & Drehimpulsquantenzahlen \\
+        \( \mathbf{R} \): & Kernkoordinate \((X, Y, Z)\)
+    \end{tabular}
+    \autocite{Reinhold2015}
+
+    \item \textbf{Slater-Type Orbitals (STOs)}: 
+    \[ e^{-\zeta \|\mathbf{r} - \mathbf{R}\|} \]
+    \begin{itemize}
+        \item[+] Bessere Approximation der Atomorbitale
+        \item[-] Rechenintensive Integralberechnung
+        \item[→] Nur für spezielle Anwendungen/Referenzrechnungen
+    \end{itemize}
+    \autocite{Reinhold2015,Zülicke2015,alma990015422030206446}
+\end{itemize}
+
+% ========================
+%  TABELLEN
+% ========================
+% Externe Tabellendateien einbinden
+Auf diese kann man wie Abbildungen verweisen: \textbf{\cref{tab:geometrie}}
+
+\input{Tabelle/tab_1.tex}
+\input{Tabelle/tab_2.tex}
