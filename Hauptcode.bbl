@@ -162,47 +162,6 @@
       \verb https://doi.org/10.1007/978-3-658-09410-2_4
       \endverb
     \endentry
-    \entry{alma990015422030206446}{book}{}{}
-      \name{author}{2}{}{%
-        {{hash=dc52ed3315ff506a9d4fe6a0ab079ae2}{%
-           family={Szabo},
-           familyi={S\bibinitperiod},
-           given={Attila},
-           giveni={A\bibinitperiod}}}%
-        {{hash=977f18e68b981d3d80b363ccb7cbeab7}{%
-           family={Ostlund},
-           familyi={O\bibinitperiod},
-           given={Neil\bibnamedelima S.},
-           giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {eng}%
-      }
-      \list{location}{1}{%
-        {Mineola, NY}%
-      }
-      \list{publisher}{1}{%
-        {Dover}%
-      }
-      \strng{namehash}{7e4e963df06b39584349eaf439922455}
-      \strng{fullhash}{7e4e963df06b39584349eaf439922455}
-      \strng{fullhashraw}{7e4e963df06b39584349eaf439922455}
-      \strng{bibnamehash}{7e4e963df06b39584349eaf439922455}
-      \strng{authorbibnamehash}{7e4e963df06b39584349eaf439922455}
-      \strng{authornamehash}{7e4e963df06b39584349eaf439922455}
-      \strng{authorfullhash}{7e4e963df06b39584349eaf439922455}
-      \strng{authorfullhashraw}{7e4e963df06b39584349eaf439922455}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Modern quantum chemistry introduction to advanced electronic structure theory}
-      \field{edition}{Unabridged, unaltered republ. of the 1. ed., rev., New York, 1989}
-      \field{isbn}{9780486691862}
-      \field{title}{Modern quantum chemistry : introduction to advanced electronic structure theory}
-      \field{year}{1996}
-      \keyw{Quantenchemie}
-    \endentry
   \enddatalist
 \endrefsection
 \endinput
