@@ -1,5 +1,0 @@
-!DLPNO-CCSD(T) cc-pVTZ cc-pVTZ/C  PAL4
-
-%MaxCore 1000
-
-* XYZFILE 0 1 dien_cc/dien_DFT_B3LYP_D4_opt.xyz
