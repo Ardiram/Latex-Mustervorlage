@@ -114,6 +114,7 @@
 \usepackage{paracol}            % Parallelspalten
 \usepackage{pdfpages}           % PDF-Einbindung
 \usepackage{fancyvrb}           % Verbesserte Verbumgebungen
+\usepackage{hyphenat}           % Um alternativen Bindestrich zu haben
 
 % ========================
 %  DOKUMENTKONFIGURATION
@@ -133,6 +134,10 @@
 \newcommand{\HRule}{\rule{\linewidth}{0.7mm}}  % Horizontale Linie
 \newcommand{\size}[2]{{\fontsize{#1}{0}\selectfont#2}}  % Schriftgröße
 \newcommand{\cellbreak}[2][c]{\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+
+\useshorthands{~}
+\defineshorthand{~}{\hyp{}}
 
 \urlstyle{same}
 
